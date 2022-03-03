@@ -20,7 +20,7 @@
                                 <rect key="frame" x="137" y="780" width="140" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="Ncf-t4-iEi"/>
-                                    <constraint firstAttribute="width" constant="140" id="juB-9g-Bs1"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="140" id="juB-9g-Bs1"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="START">
@@ -30,24 +30,24 @@
                                     <action selector="trafficControlButtonClick" destination="BYZ-38-t0r" eventType="touchUpInside" id="0Zx-56-swo"/>
                                 </connections>
                             </button>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="YxC-RA-qzg">
-                                <rect key="frame" x="143" y="92" width="128" height="448"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="YxC-RA-qzg">
+                                <rect key="frame" x="143" y="60" width="128" height="412"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F97-uY-cWy">
-                                        <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="128" height="122.5"/>
                                         <color key="backgroundColor" systemColor="systemRedColor"/>
                                     </view>
                                     <view alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XlK-hQ-kS4">
-                                        <rect key="frame" x="0.0" y="160" width="128" height="128"/>
+                                        <rect key="frame" x="0.0" y="144.5" width="128" height="123"/>
                                         <color key="backgroundColor" systemColor="systemYellowColor"/>
                                     </view>
                                     <view alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OfM-Fk-pS5">
-                                        <rect key="frame" x="0.0" y="320" width="128" height="128"/>
+                                        <rect key="frame" x="0.0" y="289.5" width="128" height="122.5"/>
                                         <color key="backgroundColor" systemColor="systemGreenColor"/>
                                     </view>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="448" id="Hj2-iq-6FH"/>
+                                    <constraint firstAttribute="height" constant="412" id="Hj2-iq-6FH"/>
                                     <constraint firstAttribute="width" constant="128" id="n1F-YN-9Mx"/>
                                 </constraints>
                             </stackView>
@@ -58,7 +58,7 @@
                             <constraint firstItem="YxC-RA-qzg" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="CSV-NT-acr"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="SMM-MR-lAN" secondAttribute="bottom" constant="32" id="JpU-X1-dnM"/>
                             <constraint firstItem="SMM-MR-lAN" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="aKf-od-VJi"/>
-                            <constraint firstItem="F97-uY-cWy" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="48" id="hIi-8Y-oMG"/>
+                            <constraint firstItem="F97-uY-cWy" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="hIi-8Y-oMG"/>
                         </constraints>
                     </view>
                     <connections>

@@ -7,7 +7,6 @@
 
 import UIKit
 
-// Все цвета и состояние "Выключен" заданы хардкодно
 enum TrafficLightState {
     case red
     case yellow
@@ -77,9 +76,10 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        redLightView.layer.cornerRadius = redLightView.layer.frame.width / 2
-        yellowLightView.layer.cornerRadius = yellowLightView.layer.frame.width / 2
-        greenLightView.layer.cornerRadius = greenLightView.layer.frame.width / 2
+        
+        redLightView.layer.cornerRadius = redLightView.layer.frame.height / 2
+        yellowLightView.layer.cornerRadius = yellowLightView.layer.frame.height / 2
+        greenLightView.layer.cornerRadius = greenLightView.layer.frame.height / 2
         
         trafficLight.linkAndReset(
             redLightHandler: redLightView,
